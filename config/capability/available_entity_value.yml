@@ -1,0 +1,28 @@
+endpoint:
+- (v3) GET /reviews/0
+- (v1) GET /ratings/0
+- (v1) GET /reviews/0
+- (v2) GET /reviews/0
+- (v1) GET /productpage
+- (v1) GET /details/0
+graph:
+- service dependency graph
+- endpoint dependency graph
+- direct service dependencies
+- indirect service dependencies
+insight:
+- cohesion
+- coupling
+- instability
+- all insights
+mode:
+- text
+- image
+- url
+service:
+- ratings.book.v1
+- reviews.book.v3
+- reviews.book.v2
+- reviews.book.v1
+- details.book.v1
+- productpage.book.v1

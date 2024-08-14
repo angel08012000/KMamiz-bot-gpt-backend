@@ -1,0 +1,36 @@
+{
+	"ui_type": "",
+	"data" : {
+
+		"link" : {
+			"url" : "",
+			"content" : ""
+		},
+
+    "code" : {
+      "language" : "",
+			"content" : ""
+    },
+
+    "table" : {
+			"thead" : "",
+			"tbody" : [],
+			"tfoot" : ""
+		},
+
+    "image" : {
+      "base64" : ""
+    },
+
+    "text" : {
+			"tag" : "",
+			"content" : ""
+		},
+
+    "button" : {
+			"function" : "",
+			"content" : ""
+		}
+
+	}
+}

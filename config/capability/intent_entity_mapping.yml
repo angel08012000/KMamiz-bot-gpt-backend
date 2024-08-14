@@ -1,0 +1,18 @@
+# retrieve one of insights of one or all service in many ways
+get_insight:
+  - insight
+  - service
+  - mode
+
+# retrieve one of dependency graph
+get_dependency_graph:
+  - graph
+  - mode
+
+# retrieve the swagger of one service
+get_swagger:
+  - service
+
+# retrieve the schema of one endpoint
+get_schema:
+  - endpoint

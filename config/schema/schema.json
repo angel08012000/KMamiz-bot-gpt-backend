@@ -1,0 +1,98 @@
+{
+  "type": "object",
+  "properties": {
+    "ui_type": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["url", "content"],
+          "additionalProperties": false
+        },
+        "code": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["language", "content"],
+          "additionalProperties": false
+        },
+        "table": {
+          "type": "object",
+          "properties": {
+            "thead": {
+              "type": "string"
+            },
+            "tbody": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "tfoot": {
+              "type": "string"
+            }
+          },
+          "required": ["thead", "tbody", "tfoot"],
+          "additionalProperties": false
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "base64": {
+              "type": "string"
+            }
+          },
+          "required": ["base64"],
+          "additionalProperties": false
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "tag": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["tag", "content"],
+          "additionalProperties": false
+        },
+        "button": {
+          "type": "object",
+          "properties": {
+            "function": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["function", "content"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["link", "code", "table", "image", "text", "button"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["ui_type", "data"],
+  "additionalProperties": false
+}
